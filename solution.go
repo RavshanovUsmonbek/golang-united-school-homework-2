@@ -12,13 +12,16 @@ import "math"
 
 type sideType uint64
 
-const (
-	SidesCircle sideType = iota
-	_
-	_
-	SidesTriangle
-	SidesSquare
-)
+// const (
+// 	SidesCircle sideType = iota
+// 	_
+// 	_
+// 	SidesTriangle
+// 	SidesSquare
+// )
+const SidesCircle sideType = 0
+const SidesTriangle sideType = 3
+const SidesSquare sideType = 4
 
 func CalcSquare(sideLen float64, sidesNum sideType) float64 {
 	switch sidesNum {
