@@ -10,17 +10,17 @@ import "math"
 // CalcSquare(10.0, SidesSquare)
 // CalcSquare(10.0, SidesCircle)
 
-type SideType int
+type sideType int
 
 const (
-	SidesCircle SideType = iota
+	SidesCircle sideType = iota
 	_
 	_
 	SidesTriangle
 	SidesSquare
 )
 
-func CalcSquare(sideLen float64, sidesNum SideType) float64 {
+func CalcSquare(sideLen float64, sidesNum sideType) float64 {
 	switch sidesNum {
 	case 0:
 		return math.Pi * math.Pow(sideLen, 2)
