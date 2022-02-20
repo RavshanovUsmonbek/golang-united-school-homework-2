@@ -27,7 +27,7 @@ func CalcSquare(sideLen float64, sidesNum sideType) float64 {
 	case 3:
 		return math.Sqrt(sideLen) * math.Pow(sideLen, 2) / 4
 	case 4:
-		return sideLen * sideLen
+		return math.Pow(sideLen, 2)
 	default:
 		return 0
 	}
