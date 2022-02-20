@@ -10,7 +10,7 @@ import "math"
 // CalcSquare(10.0, SidesSquare)
 // CalcSquare(10.0, SidesCircle)
 
-type sideType int64
+type sideType uint64
 
 const (
 	SidesCircle sideType = iota
